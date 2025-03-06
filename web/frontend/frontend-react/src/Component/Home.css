@@ -1,0 +1,121 @@
+/* Home Page Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fc;
+  color: #333;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures the footer stays at the bottom */
+  background-image: url('../assets/HD-wallpaper-medical-hospital.png');
+  background-size: cover;
+}
+
+.header {
+  background-color: #2e7d32;
+  color: white;
+  text-align: left; /* Align text to the left */
+  padding: 40px;
+  margin-bottom: 20px;
+  margin-left: 250px; /* Aligns it with the main content */
+}
+
+
+.header h1 {
+  font-size: 40px;
+  margin: 0;
+}
+
+.header p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.sidebar {
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #574e4e;
+  padding-top: 40px;
+  height: 100%;
+  color: white;
+}
+
+.sidebar a {
+  padding: 15px 25px;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  display: block;
+  border-bottom: 1px solid #444;
+}
+
+.sidebar a:hover {
+  background-color: #b9bab9;
+}
+
+.main-content {
+  margin-left: 250px; /* Push content to the right, aligning with the header */
+  padding: 40px;
+  text-align: center;
+  flex: 1;  /* Allows it to take up available space */
+  
+  display: flex;  
+  flex-direction: column;  
+  justify-content: center;  /* Centers content vertically */
+  align-items: center; /* Centers content horizontally */
+  height: 100vh; /* Ensures it takes full viewport height */
+}
+
+
+.main-content h2 {
+  font-size: 32px;
+  color: #333;
+}
+
+.main-content p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.cta-button {
+  margin-top: 30px;
+}
+
+.cta-button a {
+  padding: 15px 30px;
+  background-color: #2e7d32;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.cta-button a:hover {
+  background-color: #388e3c;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
